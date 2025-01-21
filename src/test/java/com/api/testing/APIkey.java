@@ -13,7 +13,7 @@ public class APIkey {
 		given()
 			
 		.when()
-			.get("http://api.openweathermap.org/geo/1.0/direct?q=Hyderabad&limit=5&appid=ed9b8ed0edc090919795def6f872aef8")
+			.get("http://api.openweathermap.org/geo/1.0/direct?q=Hyderabad&limit=5&appid=type_ur_token")
 			
 		.then()
 			.statusCode(200)
@@ -30,7 +30,7 @@ public class APIkey {
 			.pathParam("pathParam3", "/direct")
 			.queryParam("q", "Chennai")
 			.queryParam("limit", "5")
-			.queryParam("appid", "ed9b8ed0edc090919795def6f872aef8")
+			.queryParam("appid", "type_ur_token")
 			
 		.when()
 			.get("http://api.openweathermap.org/{pathParam1}/{pathParam2}/{pathParam3}")
