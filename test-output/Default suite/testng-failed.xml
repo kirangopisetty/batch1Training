@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.api.testing.soapAPIs">
+      <class name="com.api.testing.basicAuthAPI">
         <methods>
-          <include name="subtractAPI"/>
+          <include name="basicAuthenticationAPI"/>
         </methods>
-      </class> <!-- com.api.testing.soapAPIs -->
+      </class> <!-- com.api.testing.basicAuthAPI -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

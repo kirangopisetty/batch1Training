@@ -1,29 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-01-20T23:19:04 IST" name="Default suite" finished-at="2025-01-20T23:19:08 IST" duration-ms="3956">
+  <suite started-at="2025-01-31T22:33:30 IST" name="Suite" finished-at="2025-01-31T22:33:36 IST" duration-ms="6675">
     <groups>
     </groups>
-    <test started-at="2025-01-20T23:19:04 IST" name="Default test" finished-at="2025-01-20T23:19:08 IST" duration-ms="3956">
-      <class name="com.api.testing.soapAPIs">
-        <test-method signature="addAPI()[pri:0, instance:com.api.testing.soapAPIs@4d5650ae]" started-at="2025-01-20T23:19:04 IST" name="addAPI" finished-at="2025-01-20T23:19:06 IST" duration-ms="2024" status="PASS">
+    <test started-at="2025-01-31T22:33:30 IST" name="Test" finished-at="2025-01-31T22:33:36 IST" duration-ms="6675">
+      <class name="com.api.testing.e2eAutomation">
+        <test-method signature="createAuser()[pri:1, instance:com.api.testing.e2eAutomation@55322aab]" started-at="2025-01-31T22:33:30 IST" name="createAuser" finished-at="2025-01-31T22:33:32 IST" duration-ms="2645" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- addAPI -->
-        <test-method signature="divideAPI()[pri:0, instance:com.api.testing.soapAPIs@4d5650ae]" started-at="2025-01-20T23:19:06 IST" name="divideAPI" finished-at="2025-01-20T23:19:07 IST" duration-ms="668" status="PASS">
+        </test-method> <!-- createAuser -->
+        <test-method signature="verifyIfUserisCreated()[pri:2, instance:com.api.testing.e2eAutomation@55322aab]" started-at="2025-01-31T22:33:32 IST" name="verifyIfUserisCreated" finished-at="2025-01-31T22:33:33 IST" duration-ms="784" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- divideAPI -->
-        <test-method signature="multiplyAPI()[pri:0, instance:com.api.testing.soapAPIs@4d5650ae]" started-at="2025-01-20T23:19:07 IST" name="multiplyAPI" finished-at="2025-01-20T23:19:07 IST" duration-ms="607" status="PASS">
+        </test-method> <!-- verifyIfUserisCreated -->
+        <test-method signature="updateTheCreatedUser()[pri:3, instance:com.api.testing.e2eAutomation@55322aab]" started-at="2025-01-31T22:33:33 IST" name="updateTheCreatedUser" finished-at="2025-01-31T22:33:34 IST" duration-ms="1125" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- multiplyAPI -->
-        <test-method signature="subtractAPI()[pri:0, instance:com.api.testing.soapAPIs@4d5650ae]" started-at="2025-01-20T23:19:07 IST" name="subtractAPI" finished-at="2025-01-20T23:19:08 IST" duration-ms="610" status="PASS">
+        </test-method> <!-- updateTheCreatedUser -->
+        <test-method signature="verifyIfUserisUpdated()[pri:4, instance:com.api.testing.e2eAutomation@55322aab]" started-at="2025-01-31T22:33:34 IST" name="verifyIfUserisUpdated" finished-at="2025-01-31T22:33:35 IST" duration-ms="440" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- subtractAPI -->
-      </class> <!-- com.api.testing.soapAPIs -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- verifyIfUserisUpdated -->
+        <test-method signature="deleteTheCreatedUser()[pri:5, instance:com.api.testing.e2eAutomation@55322aab]" started-at="2025-01-31T22:33:35 IST" name="deleteTheCreatedUser" finished-at="2025-01-31T22:33:35 IST" duration-ms="566" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteTheCreatedUser -->
+        <test-method signature="verifyIfUserisDeleted()[pri:6, instance:com.api.testing.e2eAutomation@55322aab]" started-at="2025-01-31T22:33:35 IST" name="verifyIfUserisDeleted" finished-at="2025-01-31T22:33:36 IST" duration-ms="1002" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyIfUserisDeleted -->
+      </class> <!-- com.api.testing.e2eAutomation -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

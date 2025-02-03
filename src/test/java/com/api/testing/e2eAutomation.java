@@ -2,10 +2,21 @@ package com.api.testing;
 
 import org.testng.annotations.Test;
 import com.github.javafaker.Faker;
+
+import io.qameta.allure.Description;
+import io.qameta.allure.Epic;
+import io.qameta.allure.Feature;
+import io.qameta.allure.Severity;
+import io.qameta.allure.SeverityLevel;
+import io.qameta.allure.Step;
+import io.qameta.allure.Story;
+
 import static io.restassured.RestAssured.*;
 import java.util.HashMap;
 import static org.hamcrest.Matchers.*;
 
+@Epic("EPIC:E2E API AUTOMATION")
+@Feature("FEATURE:The feature objective is to achieve end to end api chaining automation across all 6 APIs")
 public class e2eAutomation {
 	
 	// CREATE A USER (POST) 
@@ -13,6 +24,10 @@ public class e2eAutomation {
 	Faker faker = new Faker();
 	int extractedID;
 		
+	@Story("User Story: The application allows the user to create a user")
+	@Step("Step:Enter the name, email, gender & status and submit the request")
+	@Description("Description:This API uses random java functions to generate test data")
+	@Severity(SeverityLevel.CRITICAL)
 	@Test (priority = 1)
 	public void createAuser() {
 		
@@ -43,6 +58,10 @@ public class e2eAutomation {
 	
 	// VERIFY IF USER IS CREATED (GET) 
 	
+	@Story("User Story: The application allows the user to verify if the user is created")
+	@Step("Step:Enter the id of the person and submit the request")
+	@Description("Description:This API uses the extracted ID to generate the user details")
+	@Severity(SeverityLevel.MINOR)
 	@Test (priority = 2)
 	public void verifyIfUserisCreated() {
 		
@@ -63,6 +82,10 @@ public class e2eAutomation {
 	
 	// UPDATE THE CREATED USER (PATCH)
 	
+	@Story("User Story: The application allows the user to update an user")
+	@Step("Enter the id, name, email, gender & status and submit the request")
+	@Description("This API uses random java functions to generate test data")
+	@Severity(SeverityLevel.CRITICAL)
 	@Test (priority = 3)
 	public void updateTheCreatedUser() {
 		
@@ -88,7 +111,10 @@ public class e2eAutomation {
 	
 	
 	// VERIFY IF USER IS UPDATED (GET) 
-	
+	@Story("User Story: The application allows the user to verify if the user is updated")
+	@Step("Enter the id and submit the request")
+	@Description("This API uses the extracted ID to generate the updated user details")
+	@Severity(SeverityLevel.MINOR)
 	@Test (priority = 4)
 	public void verifyIfUserisUpdated() {
 		
@@ -108,7 +134,10 @@ public class e2eAutomation {
 }
 	
 	// DELETE THE CREATED USER (DELETE) 
-	
+	@Story("User Story: The application allows the user to delete the user")
+	@Step("Enter the id and submit the request")
+	@Description("This API uses the extracted ID to delete the user")
+	@Severity(SeverityLevel.BLOCKER)
 	@Test (priority = 5)
 	public void deleteTheCreatedUser() {
 		
@@ -129,6 +158,10 @@ public class e2eAutomation {
 	
 	// VERIFY IF USER IS DELETED (GET)
 	
+	@Story("User Story: The application allows the user to verify if the user is deleted")
+	@Step("Enter the id and submit the request")
+	@Description("This API uses extracted ID to verify if the user is deleted")
+	@Severity(SeverityLevel.MINOR)
 	@Test (priority = 6)
 	public void verifyIfUserisDeleted() {
 		
